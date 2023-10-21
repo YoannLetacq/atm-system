@@ -32,9 +32,18 @@ struct User
 // authentication functions
 void loginMenu(char a[50], char pass[50]);
 void registerMenu(char a[50], char pass[50]);
-const char *getPassword(struct User u);
+void getPassword(struct User u, char *buffer);
+void registerUser(struct User newUser);
 
-// system function
+// system functions
 void createNewAcc(struct User u);
 void mainMenu(struct User u);
 void checkAllAccounts(struct User u);
+void updateAccountInfo(struct User u);
+void checkAccountDetails(struct User u);
+void makeTransaction(struct User u);
+void removeAccount(struct User u);
+void transferOwnership(struct User u);
+void stayOrReturn(int notGood, void (*f)(struct User u), struct User u);
+void success(struct User u);
+void clearInputBuffer();

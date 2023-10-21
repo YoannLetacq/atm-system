@@ -1,1 +1,3 @@
 atm-system/src/*.o
+atm-system/src/*.d
+atm-system/atm
